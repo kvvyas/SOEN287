@@ -258,7 +258,7 @@ app.get("/LoginBusiness",(req,res)=>{
                             logo: businessinfos[0].logo
                         };
 
-                        res.render("login.ejs",{ BusinessInfo: businessinfo ,Warning: tempwarning});
+                        res.render("loginBusiness.ejs",{ BusinessInfo: businessinfo ,Warning: tempwarning});
                         req.session.warning="";
                     }else{
                         res.send("Could not find Business Info with given ID");
